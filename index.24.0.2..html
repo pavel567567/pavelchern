@@ -1,0 +1,411 @@
+<style>
+	/*вот так ставятся комментарии внутри style*/
+
+	/* ВСЯ ШАПКА */
+	.header {
+		background-color: gray;
+		height: 100px;
+		font-family: arial;
+	}
+	/* ЦЕНТРАЛЬНЫЙ ГЛАВНЫЙ ДИВ */
+	.charts-container {
+		width: 1000px;
+		height: 2000px;
+		background-color: white;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: arial;
+
+	}
+
+	/* ДИВ, КОТОРЫЙ СОДЕРЖИТ ДИВЫ ДЛЯ ЛОГОТИПА, ССЫЛОК И КНОПКИ */
+	.header-center {
+		height: 95px;
+		background-color: gray;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
+	/* ДИВ ДЛЯ ЧЕТЫРЕХ КНОПОК СОРТИРОВКИ */
+	.charts-sort {
+		background-color: white;
+		height: 100px;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	/* ДИВ ДЛЯ ПЕСНИ, КОТОРАЯ ПОДНЯЛАСЬ В РЕЙТИНГЕ ПЕСЕН */
+	.charts-up {
+		height: 200px;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: C5EDD1;
+		border-radius: 10px;
+		margin-top: 10px;
+		display: flex;
+	}
+	/* ДИВ ДЛЯ НОВОЙ ПЕСНИ, КОТОРАЯ ПОПАЛА В РЕЙТИНГ ПЕСЕН */
+	.charts-new {
+		height: 200px;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: FFE7BA;
+		border-radius: 10px;
+		margin-top: 10px;
+		display: flex;
+	}
+	/* ДИВ ДЛЯ ПЕСНИ, КОТОРАЯ ОПУСТИЛАСЬ В РЕЙТИНГЕ ПЕСЕН */
+	.charts-down {
+		height: 200px;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: EDC2C2;
+		border-radius: 10px;
+		margin-top: 10px;
+		display: flex;
+	}
+	/* ДИВ ДЛЯ ЛОГОТИПА САЙТА*/
+	.box-logo {
+		height: 95px;
+		width: 200px;
+		
+		 
+	}
+	/* ДИВ ДЛЯ ЧЕТЫРЕХ ССЫЛОК САЙТА*/
+	.box-links {
+		height: 65px;
+		width: 650px;
+		padding-top: 30px;
+		 
+	}
+	/* ДИВ ДЛЯ КНОПКИ "SUBSCRIBE" */
+	.box-buttons {
+		height: 95px;
+		width: 150px;
+		
+		 
+	}
+	/* ДИВ ДЛЯ НОМЕРА И СТАТУСА ПЕСНИ В РЕЙТИНГЕ */
+	.charts-rank {
+		width: 120px;
+		height: 160px;
+		text-align: center;
+		padding-top: 40px;	
+	}
+	/* ДИВ ДЛЯ НАЗВАНИЯ И ИСПОЛНИТЕЛЯ ПЕСНИ */
+	.charts-info {
+		width: 550px;
+		height: 180px;
+		padding-top: 20px;
+		font-weight: 700;
+		font-size: 25px
+	}
+	/* ДИВ ДЛЯ КНОПОК ПЕСНИ */
+	.charts-button {
+		width: 180px;
+		height: 180px;
+		padding-top: 20px;
+		
+	}
+	/* ДИВ ДЛЯ КАРТИНКИ ПЕСНИ ИЛИ АЛЬБОМА */
+	.charts-img {
+		width: 150px;
+		height: 200px;
+		
+		
+	}
+	/* ЧЕТЫРЕ ССЫЛКИ В ШАПКЕ */
+	.links-header {
+		margin-left: 50px;
+		color: white;
+	}
+	/* ФИОЛЕТОВАЯ КНОПКА */
+	.button-purple {
+		background-color: purple;
+		color: white;
+		margin-top: 20px;
+		width: 150px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+	}
+	/* СИНЯЯ КНОПКА */
+	.button-blue {
+		background-color: blue;
+		color: white;
+		margin-top: 20px;
+		width: 160px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+	}
+	/* ЗЕЛЕНАЯ КНОПКА */
+	.button-green {
+		background-color: green;
+		color: white;
+		margin-top: 20px;
+		width: 150px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+	}
+	
+
+	/* КРАСНАЯ КНОПКА */
+	.button-red {
+		background-color: red;
+		color: white;
+		margin-top: 20px;
+		width: 150px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+	}
+
+	/* ТЕКСТ СТАТУСА ПЕСНИ, КОТОРАЯ ПОДНЯЛАСЬ В РЕЙТИНГЕ */
+	.charts-rank-text-up {
+		font-weight: 700;
+		color: green;
+	}
+	/* ТЕКСТ СТАТУСА ПЕСНИ, КОТОРАЯ НЕДАВНО ПОПАЛА В РЕЙТИНГ */
+	.charts-rank-text-new {
+		font-weight: 700;
+		color: orange;
+	}
+	/* ТЕКСТ СТАТУСА ПЕСНИ, КОТОРАЯ ОПУСТИЛАСЬ В РЕЙТИНГЕ */
+	.charts-rank-text-down {
+		font-weight: 700;
+		color: red;
+	}
+	/* НАЗВАНИЕ ПЕСНИ */
+	.charts-info-songname {
+		color: blue;
+	}
+	/* НАЗВАНИЕ ИСПОЛНИТЕЛЯ */
+	.charts-info-artistname {
+		color: gray;
+	}
+	/* КАРТИНКА ДЛЯ ПЕСНИ */
+	.charts-img-size {
+		width: 150px;
+		margin-top: 40px;
+	}
+	.button-orange{
+		background-color: orange;
+		color: white;
+		margin-top: 20px;
+		width: 150px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+	}
+	.img-logo{
+		width: 200px;
+		height: 45px;
+		margin-top: 20px;
+	}
+</style>
+
+<!-- 1 уровень. шапка -->
+<div class="header">
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header-center">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box-logo">
+			<img class="img-logo" src="https://www.pngkit.com/png/full/234-2341310_billboard-logo-png-clip-black-and-white-2018.png">
+		</div>
+		<!-- ссылки -->
+		<div class="box-links">
+			<a class="links-header" href="">CHARTS</a>
+			<a class="links-header" href="">NEWS</a>
+			<a class="links-header" style="color: red" href="">VIDEO</a>
+			<a class="links-header" style="color: orange" href="">PHOTOS</a>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box-buttons">
+			<button class="button-purple">subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чарт-контейнер -->
+<div class="charts-container">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div class="charts-sort">
+		<button class="button-orange">THIS WEEK</button>
+		<button class="button-red">LAST WEEK</button>
+		<button class="button-green">PEAK</button>
+		<button class="button-purple">DURATION</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>1</h1>
+			<p class="charts-rank-text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">DARE</p>
+			<p class="charts-info-artistname">Gorillaz</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://loretoe2group2015.files.wordpress.com/2015/10/91.png">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>2</h1>
+			<p class="charts-rank-text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">Without Me</p>
+			<p class="charts-info-artistname">Eminem</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://europlus.us/wp-content/uploads/2020/07/mtv-number-one-music-videos-1998.jpg">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>3</h1>
+			<p class="charts-rank-text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">Pacman</p>
+			<p class="charts-info-artistname">Gorillaz</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/07/36/96/12/94/32cd07e40cd7.png">
+		</div>
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>4</h1>
+			<p class="charts-rank-text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">Viral</p>
+			<p class="charts-info-artistname">Blueface</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="data:image/jpeg;base64,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">
+		</div>
+	</div>
+
+	<!-- трек down -->
+	<div class="charts-down">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>5</h1>
+			<p class="charts-rank-text-down">Down</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">X2</p>
+			<p class="charts-info-artistname">boulevard depo</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://images.genius.com/69fff6fdb88ed9d48de69bf5c71f7d79.599x599x1.jpg">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>6</h1>
+			<p class="charts-rank-text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">Кто Вы</p>
+			<p class="charts-info-artistname">Александр Пушной</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://avatars.yandex.net/get-music-content/42108/0382cd96.a.2683660-1/m1000x1000">
+		</div>
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>7</h1>
+			<p class="charts-rank-text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">	
+			<p class="charts-info-songname">Ausländer</p>
+			
+			<p class="charts-info-artistname">Rammstein</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://i.ytimg.com/vi/pat2c33sbog/maxresdefault.jpg">
+		</div>
+	</div>
+</div>
+<!--  -->
